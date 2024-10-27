@@ -788,7 +788,7 @@ Y
 }
 
 .portfolio .portfolio-item:hover img {
-    margin-left: 15px;
+    transform: scale(1.05);
 }
 
 .portfolio .portfolio-text {
@@ -842,6 +842,11 @@ Y
         
 .github-link:hover {
     background-color: #555;
+}
+.portfolio-text {
+    display: flex;
+    flex-direction: column; /* Stack the links vertically */
+    align-items: center; /* Center-align */
 }
 
 /*******************************/
