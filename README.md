@@ -29,7 +29,7 @@ JOIN
 JOIN 
 	online_ecommerce AS e ON o.order_number = e.order_number
 
-####step 2 
+#### step 2 
 
 SELECT * FROM ecomm_summary LIMIT 10;
 
