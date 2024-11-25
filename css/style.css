@@ -13,18 +13,18 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #414141;
+    color: RGB(147, 155, 223);
 }
 
 a {
-    color: #313131;
+    color: RGB(147, 155, 223);
     transition: .3s;
 }
 
 a:hover,
 a:active,
 a:focus {
-    color: #2469a9;
+    color: RGB(147, 155, 223);
     outline: none;
     text-decoration: none;
 }
@@ -478,17 +478,19 @@ Y
 .about {
     position: relative;
     width: 100%;
-    margin: -45px 0 45px 0;
+    height: 100%;
+    margin: -5px 0 5px 0;
 }
 
 .about .col-lg-6 {
     padding: 0;
+
 }
 
 .about .section-header {
     margin-bottom: 30px;
 }
-
+/* 
 .about .about-img {
     position: relative;
     height: 80%;
@@ -500,6 +502,7 @@ Y
     height: 80%;
     object-fit: cover;
 }
+*/ 
 
 .about .about-content {
     padding: 0 40px;
