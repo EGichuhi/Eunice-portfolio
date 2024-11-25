@@ -2,8 +2,8 @@
 /********* General CSS *********/
 /*******************************/
 body {
-    color: #9c9c9b;
-    background: #ffffff;
+    color: #DAD2C0;
+    background: #DAD2C0;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -43,21 +43,22 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #ffffff;
-    background: #EF233C;
+    color: #DAD2C0
+    ;
+    background: RGB(147, 155, 223);
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #EF233C;
+    box-shadow: inset 0 0 0 50px RGB(147, 155, 223);
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
 }
 
 .btn:hover {
-    color: #EF233C;
+    color: RGB(147, 155, 223);
     background: transparent;
-    box-shadow: inset 0 0 0 0 #EF233C;
-    border-color: #EF233C;
+    box-shadow: inset 0 0 0 0 RGB(147, 155, 223);
+    border-color: RGB(147, 155, 223);
 }
 
 #loader {
@@ -69,7 +70,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
+    background: #DAD2C0;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
@@ -90,7 +91,7 @@ a:focus {
     position: relative;
     width: 45px;
     height: 45px;
-    border: 5px solid #dddddd;
+    border: 5px solid #DAD2C0;
     border-top: 5px solid #EF233C;
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
@@ -165,7 +166,7 @@ a:focus {
     margin-top: 0;
     border: 0;
     border-radius: 0;
-    background: #f8f9fa;
+    background: #DAD2C0;
 }
 
 @media (min-width: 992px) {
@@ -180,21 +181,21 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #ffffff !important;
+        background: #DAD2C0 !important;
     }
     
     .navbar .navbar-brand {
-        color: #ffffff;
+        color: #DAD2C0;
     }
     
     .navbar.nav-sticky .navbar-brand {
-        color: #d66157;
+        color: RGB(147, 155, 223);
     }
 
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        color: #ffffff;
+        color: #DAD2C0;
         font-size: 15px;
         font-weight: 500;
     }
@@ -211,18 +212,18 @@ a:focus {
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
     .navbar-light.nav-sticky .navbar-nav .nav-link.active {
-        color: #d66157;
+        color: RGB(147, 155, 223);
     }
 }
 
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: #ffffff !important;
+        background: #DAD2C0 !important;
     }
     
     .navbar .navbar-brand {
-        color: #d66157;
+        color: RGB(147, 155, 223);
     }
     
     .navbar .navbar-nav {
@@ -237,6 +238,9 @@ a:focus {
         box-shadow: none;
     }
 }
+/**
+spline 
+**/
 
 
 /*******************************/
@@ -246,9 +250,9 @@ a:focus {
     position: relative;
     width: 100%;
     margin-bottom: 45px;
-    padding: 120px 0 0 0;
+    padding: 10px 0 10px 0;
     overflow: hidden;
-    background: linear-gradient(rgba(233, 106, 121, 0.95), rgba(227, 230, 67, 0.95)), url(../img/hero-bg.jpg);
+    background: none;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -314,7 +318,7 @@ Y
 
 .hero .hero-btn .btn {
     margin-top: 35px;
-    color: #d66157;
+    color: RGB(147, 155, 223);
     background: #ffffff;
     box-shadow: inset 0 0 0 50px #ffffff;
 }
@@ -439,7 +443,7 @@ Y
     top: 11px;
     right: 0;
     left: -30px;
-    background: #d66157;
+    background: RGB(147, 155, 223);
     z-index: -1;
 }
 
@@ -450,7 +454,7 @@ Y
     height: 3px;
     top: 11px;
     left: 3px;
-    background: #d66157;
+    background: RGB(147, 155, 223);
     z-index: 1;
 }
 
@@ -503,6 +507,7 @@ Y
 
 .about .about-text p {
     font-size: 16px;
+    color: #111111;
 }
 
 .about .skills {
@@ -532,7 +537,7 @@ Y
 
 .about .progress .progress-bar {
     width: 0px;
-    background: #d66157;
+    background: RGB(147, 155, 223);
     border-radius: 10px;
     transition: 2s;
 }
@@ -565,7 +570,7 @@ Y
     content: '';
     position: absolute;
     width: 2px;
-    background: #d66157;
+    background: RGB(147, 155, 223);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -597,7 +602,7 @@ Y
     top: 48px;
     right: -8px;
     background: #ffffff;
-    border: 2px solid #d66157;
+    border: 2px solid RGB(147, 155, 223);
     border-radius: 16px;
     z-index: 1;
 }
@@ -629,7 +634,7 @@ Y
     top: 44px;
     font-size: 16px;
     font-weight: 600;
-    color: #d66157;
+    color: RGB(147, 155, 223);
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
@@ -747,10 +752,10 @@ Y
     font-size: 14px;
     font-weight: 600;
     color: #ffffff;
-    background: #d66157;
+    background: RGB(147, 155, 223);
     border: 2px solid transparent;
     border-radius: 0;
-    box-shadow: inset 0 0 0 50px #d66157;
+    box-shadow: inset 0 0 0 50px RGB(147, 155, 223);
     transition: ease-out 0.3s;
     -webkit-transition: ease-out 0.3s;
     -moz-transition: ease-out 0.3s;
@@ -758,10 +763,10 @@ Y
 
 .portfolio #portfolio-filter li:hover,
 .portfolio #portfolio-filter li.filter-active {
-    color: #d66157;
+    color: RGB(147, 155, 223);
     background: transparent;
-    box-shadow: inset 0 0 0 0 #d66157;
-    border-color: #d66157;
+    box-shadow: inset 0 0 0 0 RGB(147, 155, 223);
+    border-color: RGB(147, 155, 223);
 }
 
 .portfolio .portfolio-item {
@@ -807,7 +812,7 @@ Y
     font-size: 18px;
     font-weight: 600;
     margin: 0 0 0 15px;
-    white-space: nowrap;
+    white-space: wrap;
     overflow: hidden;
 }
 
@@ -823,10 +828,10 @@ Y
 }
 
 .portfolio .portfolio-item:hover a.btn {
-    color: #EF233C;
+    color: RGB(147, 155, 223);
     background: transparent;
-    box-shadow: inset 0 0 0 0 #d66157;
-    border-color: #d66157;
+    box-shadow: inset 0 0 0 0 RGB(147, 155, 223);
+    border-color: RGB(147, 155, 223);
 }
 
 /*******************************/
@@ -836,11 +841,11 @@ Y
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #ffffff;
+    background: #DAD2C0;
 }
 
 .contact .container-fluid {
-    background: url(../img/contact2.JPG) left center no-repeat;
+    background: url("https://my.spline.design/studyspace-3faaa51e3d25fdb8b5ab80fe6c763b43/"") left center no-repeat;
     background-size: contain;
 }
 
@@ -848,14 +853,14 @@ Y
     position: relative;
     padding: 90px 45px 90px 45px;
     overflow: hidden;
-    background: #d66157;
+    background: RGB(147, 155, 223);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
 .contact .contact-form input {
-    color: #ffffff;
+    color: #DAD2C0;
     padding: 15px 0;
     background: none;
     border-radius: 0;
@@ -864,7 +869,7 @@ Y
 }
 
 .contact .contact-form textarea {
-    color: #ffffff;
+    color: #DAD2C0;
     height: 90px;
     padding: 15px 0;
     background: none;
@@ -874,27 +879,27 @@ Y
 }
 
 .contact .contact-form .form-control::placeholder {
-    color: #ffffff;
+    color: #DAD2C0;
     opacity: 1;
 }
 
 .contact .contact-form .form-control:-ms-input-placeholder,
 .contact .contact-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
+    color: #DAD2C0;
 }
 
 .contact .contact-form .btn {
     margin-top: 35px;
-    color: #d66157;
-    background: #ffffff;
-    box-shadow: inset 0 0 0 50px #ffffff;
+    color: RGB(147, 155, 223);
+    background: #DAD2C0;
+    box-shadow: inset 0 0 0 50px #DAD2C0;
 }
 
 .contact .contact-form .btn:hover {
-    color: #ffffff;
+    color: #DAD2C0;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #ffffff;
-    border-color: #ffffff;
+    box-shadow: inset 0 0 0 0 #DAD2C0;
+    border-color: #DAD2C0;
 }
 
 .contact .help-block ul {
@@ -903,7 +908,7 @@ Y
     list-style-type: none;
     font-size: 14px;
     font-style: italic;
-    color: #ffffff;
+    color: #DAD2C0;
 }
 
 @media (max-width: 767.98px) {
@@ -924,7 +929,7 @@ Y
     position: relative;
     margin-top: 45px;
     overflow: hidden;
-    background: linear-gradient(rgba(214, 97, 87, 255), rgba(236, 239, 35, 0.95)), url(../img/hero-bg.jpg);
+    background: linear-gradient(RGB(147, 155, 223), rgba(236, 239, 35, 0.95)), url(../img/hero-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
