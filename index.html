@@ -11,8 +11,6 @@
         <!-- Google Font -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         
-        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.46/build/spline-viewer.js"></script>
-        <spline-viewer url="https://prod.spline.design/7NAMdQq3eorMnpHW/scene.splinecode"></spline-viewer>
         <!-- CSS Libraries -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -45,7 +43,10 @@
             </div>
         </div>
         <!-- Nav Bar End -->
-
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.46/build/spline-viewer.js"></script>
+        <div class="spline">
+            <spline-viewer  url="https://prod.spline.design/7NAMdQq3eorMnpHW/scene.splinecode"></spline-viewer>
+        </div>
         <!-- Hero Start -->
         <div class="hero" id="home">
             <div class="container-fluid">
@@ -56,7 +57,7 @@
                                 <p>I'm</p>
                                 <h1>Eunice Gichuhi</h1>
                                 <h2></h2>
-                                <div class="typed-text">Engineering undergrad, Data Analysis and Engineering</div>
+                                <div class="typed-text">Engineering undergrad, Data Analyst</div>
                             </div>
                             <div class="hero-btn">
                                 <a class="btn" href="mailto:ewgichuh@uwaterloo.ca?subject=Hire%20Me">Hire Me</a>
@@ -80,13 +81,13 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="about-img">
-                            <img src="img/about3.png" alt="Image">
-                        </div>
+                        <!-- <div class="about-img">
+                            <img src="" alt="Image">
+                        </div> -->
                     </div>
                     <div class="col-lg-6">
                         <div class="about-content">
-                            <div class="section-header text-left">
+                            <div class="section-header text-center">
                                 <p>Learn About Me</p>
                                 <h2>Welcome to my portfolio!</h2>
                             </div>
@@ -97,7 +98,7 @@
                                 <p>
                                     I’m passionate about problem-solving and developing innovative solutions. I have experience in programming (Python, HTML, CSS) and data analysis/machine learning using tools like Pandas, NumPy, Matplotlib, Seaborn, and SciPy. Through coursework, I have gained skills in software such as COMSOL, AutoCAD, SQL, and MATLAB.
                                 </p>
-                                <p>
+                             <p>
                                     I’m currently seeking opportunities to collaborate with innovative teams and contribute to cutting-edge solutions in the tech industry. I’m eager to learn and grow as a valuable asset in my field.
                                 </p>
                             </div>
@@ -148,6 +149,68 @@
         </div>
         <!-- About End -->
         
+ Portfolio Start 
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p> Personal Projects</p>
+                    <h2>Projects</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul id="portfolio-filter">
+                            <li data-filter="*" class="filter-active">ALL</li>
+                            <li data-filter=".filter-1">Project 1</li>
+                            <li data-filter=".filter-2">Project 2</li>
+                            <!-- li data-filter=".filter-3">Project 3</!-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container">
+                    /// Project 1 
+
+                    
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-1.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Enhancing Public Transport for Invisible disabilities in Nairobi  </h3>
+                                <a class="btn" href="https://www.omdena.com/chapter-challenges/enhancing-public-transport-accessibility-for-insivible-disabilities-in-nairobi" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div>                 
+                    
+                     /// Project 2 
+                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-2.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Numerical Simulation</h3>
+                                <a class="btn" href="...">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- /// Project 3
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Machine Learning</h3>
+                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        Portfolio End 
          <!-- Experience Start -->
         <div class="experience" id="experience">
             <div class="container">
@@ -162,9 +225,10 @@
                             <h2>Data Ananlyst</h2>
                             <h4>Telus Internional, Vancouver, BC</h4>
                             <p>
-                                Analyzed data queries weekly to enhance AI responses, resulting in improved accuracy and efficiency, and enabling more precise and relevant user interactions.<br>
-                                Implemented quality control procedures for web search results, leading to a reduction in irrelevant or incorrect responses.<br>
-                                Reviewed and evaluated AI responses for alignment with query intent, ensuring consistency and reducing error rates in user-facing outputs.
+                                Conducted detailed reviews of AI-generated responses across domains like media, sports, and news with a 98% accuracy rate in protocol adherence.
+                                Enhanced reliability of user-facing responses by identifying and resolving AI output inconsistencies, reducing error rates.
+                                Leveraged downtime to explore company datasets, applying Python (Pandas, NumPy), SQL, and Excel for data cleaning and analysis techniques, improving reporting accuracy and supporting data-driven insights.
+                                Took initiative upskill in SQL and Databricks, experimenting with querying databases and using Jupyter Notebooks to answer relevant business questions.
                             </p>
                         </div>
                     </div>
@@ -173,78 +237,17 @@
                             <div class="timeline-date">Jan 2023 - Apr 2023</div>
                             <h2>Data Engineering Intern</h2>
                             <h4>AmLive, Toronto, ON</h4>
-                            <p>
-                                Assisted in data cleaning and preprocessing of large datasets, ensuring accuracy and consistency through techniques like normalization and deduplication using pandas.  <br>
-                                Utilized Matplotlib and Seaborn to execute data visualization techniques, presenting findings in a clear, actionable manner that supported data-driven decision-making. <br>
-                                Developed and maintained automated scripts for data validation and quality assurance, streamlining the data analysis process and significantly reducing manual error rates.
-                            </p>
+                            <p><list> 
+                                Utilized Python libraries such as Matplotlib, scikit-learn, SciPy and Seaborn to execute data analysis, and visualization techniques, for a total of 5 projects analyzing user listening patterns and playlist performance, supporting data-driven decision-making.
+                                Assisted in the development of a data processing pipeline for analyzing streaming data and user interaction with content, utilizing MongoDB for optimized data storage and Databricks for enhanced data processing and collaboration, increasing operational efficiency over four months.
+                                Participated in designing an ETL process aimed at aggregating data from different music streaming platforms to streamline data transformation from multiple sources leveraging SQL, Python, and Databricks for efficient data management and processing.
+                                </list> </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Job Experience End -->
-
-<!-- Portfolio Start 
-        <div class="portfolio" id="portfolio">
-            <div class="container">
-                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
-                    <p> Key Course Work and Personal Projects</p>
-                    <h2>Skills Portfolio</h2>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <ul id="portfolio-filter">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-1">Project 1</li>
-                            <li data-filter=".filter-2">Project 2</li>
-                            <li data-filter=".filter-3">Project 3</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row portfolio-container">
-                    /// Project 1 
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-1.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Systems</h3>
-                                <a class="btn" href="img/portfolio-1.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>                 
-                    
-                     /// Project 2 
-                     <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-2.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Numerical Simulation</h3>
-                                <a class="btn" href="img/portfolio-2.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    /// Project 3
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="portfolio-wrap">
-                            <div class="portfolio-img">
-                                <img src="img/portfolio-3.jpg" alt="Image">
-                            </div>
-                            <div class="portfolio-text">
-                                <h3>Machine Learning</h3>
-                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        Portfolio End -->
 
         
         <!-- Contact Start -->
