@@ -1,1 +1,0 @@
-EXPLAIN SELECT * FROM ecomm_summary WHERE product_id = '512';
