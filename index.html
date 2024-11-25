@@ -20,11 +20,9 @@
 
         <!--  Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
         <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.46/build/spline-viewer.js"></script>
         <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/7NAMdQq3eorMnpHW/scene.splinecode"></spline-viewer>
- 
-
+         
     </head>
 
     <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -48,7 +46,7 @@
             </div>
         </div>
         <!-- Nav Bar End -->
-        
+       
         <!-- Hero Start -->
         <div class="hero" id="home">
             <div class="container-fluid">
@@ -61,10 +59,9 @@
                                 <h2></h2>
                                 <div class="typed-text">Engineering undergrad, Data Analyst</div>
                             </div>
-                            <div class="hero-btn" id="app">
-                                <!-- Vue.js button bindings -->
-                                <a class="btn" href="mailto:ewgichuh@uwaterloo.ca?subject=Hire%20Me" v-on:click="sendMail('Hire Me')">{{ buttonTextHire }}</a>
-                                <a class="btn" href="mailto:ewgichuh@uwaterloo.ca?subject=Contact%20Me" v-on:click="sendMail('Contact Me')">{{ buttonTextContact }}</a>
+                            <div class="hero-btn">
+                                <a class="btn" href="mailto:ewgichuh@uwaterloo.ca?subject=Hire%20Me">Hire Me</a>
+                                <a class="btn" href="mailto:ewgichuh@uwaterloo.ca?subject=Contact%20Me">Contact Me</a>
                             </div>
                         </div>
                     </div>
@@ -76,24 +73,6 @@
                 </div>
             </div>
         </div>
-    
-        <!-- Vue.js Script -->
-        <script>
-            const app = Vue.createApp({
-                data() {
-                    return {
-                        buttonTextHire: 'Hire Me',
-                        buttonTextContact: 'Contact Me',
-                    };
-                },
-                methods: {
-                    sendMail(buttonType) {
-                        console.log(`${buttonType} button clicked!`);
-                    }
-                }
-            });
-            app.mount('#app');
-        </script>
         <!-- Hero End -->
 
 
@@ -102,11 +81,10 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                         <!-- div class="about-img">
-                            </!-->
-                            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.46/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/CHVUELJWmvEKV8tc/scene.splinecode"></spline-viewer>
-                        </div>
+                        <!-- <div class="about-img">
+                            <img src="" alt="Image">
+                        </div> -->
+                    </div>
                     <div class="col-lg-6">
                         <div class="about-content">
                             <div class="section-header text-center">
@@ -171,7 +149,7 @@
         </div>
         <!-- About End -->
         
-    /// Portfolio Start 
+ Portfolio Start 
         <div class="portfolio" id="portfolio">
             <div class="container">
                 <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
@@ -216,6 +194,19 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <!-- /// Project 3
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="portfolio-wrap">
+                            <div class="portfolio-img">
+                                <img src="img/portfolio-3.jpg" alt="Image">
+                            </div>
+                            <div class="portfolio-text">
+                                <h3>Machine Learning</h3>
+                                <a class="btn" href="img/portfolio-3.jpg" data-lightbox="portfolio">+</a>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </div>
