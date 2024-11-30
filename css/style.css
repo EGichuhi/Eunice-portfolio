@@ -2,8 +2,8 @@
 /********* General CSS *********/
 /*******************************/
 body {
-    color: #DAD2C0;
-    background: #DAD2C0;
+    color: RGB(147, 155, 223);
+    background: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -43,8 +43,7 @@ a:focus {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #DAD2C0
-    ;
+    color: #ffffff;
     background: RGB(147, 155, 223);
     border: 2px solid transparent;
     border-radius: 0;
@@ -70,7 +69,7 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #DAD2C0;
+    background: #ffffff;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: opacity .3s ease-out, visibility 0s linear .3s;
@@ -91,8 +90,8 @@ a:focus {
     position: relative;
     width: 45px;
     height: 45px;
-    border: 5px solid #DAD2C0;
-    border-top: 5px solid #EF233C;
+    border: 5px solid #dddddd;
+    border-top: 5px solid RGB(147, 155, 223);
     border-radius: 50%;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
@@ -127,7 +126,7 @@ a:focus {
 }
 
 .back-to-top:hover i {
-    color: #414141;
+    color: RGB(147, 155, 223);
 }
 
 
@@ -144,7 +143,7 @@ a:focus {
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 5px RGB(147, 155, 223);
 }
 
 .navbar .navbar-brand {
@@ -166,7 +165,7 @@ a:focus {
     margin-top: 0;
     border: 0;
     border-radius: 0;
-    background: #DAD2C0;
+    background: #f8f9fa;
 }
 
 @media (min-width: 992px) {
@@ -181,11 +180,11 @@ a:focus {
     
     .navbar.nav-sticky {
         padding: 10px 60px;
-        background: #DAD2C0 !important;
+        background: #ffffff !important;
     }
     
     .navbar .navbar-brand {
-        color: #DAD2C0;
+        color: #ffffff;
     }
     
     .navbar.nav-sticky .navbar-brand {
@@ -195,19 +194,19 @@ a:focus {
     .navbar-light .navbar-nav .nav-link,
     .navbar-light .navbar-nav .nav-link:focus {
         padding: 10px 10px 8px 10px;
-        color: #DAD2C0;
+        color: #ffffff;
         font-size: 15px;
         font-weight: 500;
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link,
     .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
-        color: #414141;
+        color: RGB(147, 155, 223);
     }
 
     .navbar-light .navbar-nav .nav-link:hover,
     .navbar-light .navbar-nav .nav-link.active {
-        color: #111111;
+        color: RGB(147, 155, 223);
     }
     
     .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
@@ -219,7 +218,7 @@ a:focus {
 @media (max-width: 991.98px) {   
     .navbar {
         padding: 15px;
-        background: #DAD2C0 !important;
+        background: #ffffff !important;
     }
     
     .navbar .navbar-brand {
@@ -238,9 +237,6 @@ a:focus {
         box-shadow: none;
     }
 }
-/**
-spline 
-**/
 
 
 /*******************************/
@@ -250,7 +246,7 @@ spline
     position: relative;
     width: 100%;
     margin-bottom: 45px;
-    padding: 10px 0 10px 0;
+    padding: 170px 0 100px 0;
     overflow: hidden;
     background: none;
     background-position: center;
@@ -261,7 +257,7 @@ spline
 .hero .container-fluid {
     padding: 0;
 }
-Y
+
 .hero .hero-image {
     position: relative;
     text-align: right;
@@ -269,8 +265,8 @@ Y
 }
 
 .hero .hero-image img {
-    max-width: 110%;
-    max-height: 110%;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 .hero .hero-content {
@@ -336,7 +332,7 @@ Y
 
 @media (max-width: 991.98px) {
     .hero {
-        padding-top: 40px;
+        padding-top: 60px;
     }
     
     .hero .hero-content {
@@ -362,10 +358,10 @@ Y
     }
 }
 
-@media (max-width: 967.98px) {
+@media (max-width: 767.98px) {
     .hero {
         padding-top: 60px;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
     }
     
     .hero,
@@ -427,7 +423,6 @@ Y
     display: inline-block;
     margin: 0 30px;
     margin-bottom: 10px;
-    padding-left: 15px;
     position: relative;
     font-size: 16px;
     font-weight: 600;
@@ -454,7 +449,7 @@ Y
     height: 3px;
     top: 11px;
     left: 3px;
-    background: RGB(147, 155, 223);
+    background:RGB(147, 155, 223);
     z-index: 1;
 }
 
@@ -477,72 +472,42 @@ Y
 /*******************************/
 .about {
     position: relative;
-    width: 100%;
-    height: 100%;
-    margin: -5px 0 5px 0;
+    z-index: 1; /* Layer above the animation */
+    margin: 100px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: rgba(209, 202, 245, 0.247); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(136, 205, 223, 0.3); /* Subtle shadow */
+    text-align: left; /* Ensure text is aligned to the left */
 }
 
+h1, p {
+    margin: 0 0 20px;
+    text-align: left; /* Align text in h1 and p to the left */
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* Additional style cleanup */
 .about .col-lg-6 {
     padding: 0;
-
 }
 
 .about .section-header {
     margin-bottom: 30px;
 }
-/* 
-.about .about-img {
-    position: relative;
-    height: 80%;
-}
-
-.about .about-img img {
-    position: relative;
-    width: 80%;
-    height: 80%;
-    object-fit: cover;
-}
-*/ 
 
 .about .about-content {
-    padding: 0 40px;
+    padding: 0;
 }
 
 .about .about-text p {
+    color: white;
     font-size: 16px;
-    color: #111111;
-}
-
-.about .skills {
-    margin-bottom: 30px;
-}
-
-.about .skill-name {
-    margin-top: 15px;
-}
-
-.about .skill-name p {
-    display: inline-block;
-    margin-bottom: 5px;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.about .skill-name p:last-child {
-    float: right;
-}
-
-.about .progress {
-    height: 10px;
-    border-radius: 10px;
-    background: #dddddd;
-}
-
-.about .progress .progress-bar {
-    width: 0px;
-    background: RGB(147, 155, 223);
-    border-radius: 10px;
-    transition: 2s;
+    text-align: left; /* Ensure paragraph text is aligned to the left */
 }
 
 .about .about-text a.btn {
@@ -551,7 +516,7 @@ Y
 
 @media (max-width: 991.98px) {
     .about .about-content {
-        padding: 45px 15px 0 15px;
+        padding: 15px 15px 0 15px;
     }
 }
 
@@ -560,8 +525,28 @@ Y
 /******* Experience CSS ********/
 /*******************************/
 .experience {
+    position: left;
+    z-index: 1; /* Layer above the animation */
+    max-width: auto;
+    margin: 100px ;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: rgba(209, 202, 245, 0.363); /* Semi-transparent black background */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 10px rgba(136, 205, 223, 0.3); /* Subtle shadow for depth */
+}
+
+h1, p {
+    margin: 0 0 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+.experience {
     position: relative;
-    padding: 20px 0 15px 0;
+    padding: 45px 0 15px 0;
 }
 
 .experience .timeline {
@@ -731,111 +716,86 @@ Y
     }
 }
 
+
 /*******************************/
-/******** Portfolio CSS ********/
+/********* Service CSS *********/
 /*******************************/
-.portfolio {
-    position: relative;
-    padding: 15px 0 15px 0;
-}
-
-.portfolio #portfolio-filter {
-    padding: 0;
-    margin: 25px 0 25px 0;
-    list-style: none;
-    font-size: 0;
-    text-align: center;
-}
-
-.portfolio #portfolio-filter li {
-    cursor: pointer;
-    display: inline-block;
-    margin: 5px;
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #ffffff;
-    background: RGB(147, 155, 223);
-    border: 2px solid transparent;
-    border-radius: 0;
-    box-shadow: inset 0 0 0 50px RGB(147, 155, 223);
-    transition: ease-out 0.3s;
-    -webkit-transition: ease-out 0.3s;
-    -moz-transition: ease-out 0.3s;
-}
-
-.portfolio #portfolio-filter li:hover,
-.portfolio #portfolio-filter li.filter-active {
-    color: RGB(147, 155, 223);
-    background: transparent;
-    box-shadow: inset 0 0 0 0 RGB(147, 155, 223);
-    border-color: RGB(147, 155, 223);
-}
-
-.portfolio .portfolio-item {
-    position: relative;
-}
-
-.portfolio .portfolio-wrap {
+.service {
     position: relative;
     width: 100%;
+    padding: 45px 0 15px 0;
 }
 
-.portfolio .portfolio-img {
+.service .service-item {
     position: relative;
-    overflow: hidden;
-}
-
-.portfolio .portfolio-img img {
-    position: relative;
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    transform: scale(1.1);
-    transition: .5s;
-}
-
-.portfolio .portfolio-item:hover img {
-    transform: scale(1.05);
-}
-
-.portfolio .portfolio-text {
-    position: relative;
-    height: 60px;
-    width: calc(100% - 30px);
-    margin: -30px 15px 30px 15px;
+    margin-bottom: 30px;
     display: flex;
     align-items: center;
-    background: #ffffff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .12);
+    box-shadow: inset 0 0 0 0 transparent;
+    transition: ease-out 0.5s;
 }
 
-.portfolio .portfolio-text h3 {
-    width: calc(100% - 70px);
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0 0 0 15px;
-    white-space: wrap;
-    overflow: hidden;
+.service .service-item:hover {
+    box-shadow: inset 800px 0 0 0 RGB(147, 155, 223);
 }
 
-.portfolio .portfolio-text a.btn {
-    width: 50px;
-    height: 50px;
-    padding: 0 0 2px 1px;
+.service .service-icon {
+    position: relative;
+    width: 150px;
+    min-height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 45px;
-    font-weight: 100;
+    border: 1px solid RGB(147, 155, 223);
+    background: #ffffff;
 }
 
-.portfolio .portfolio-item:hover a.btn {
+.service .service-icon i {
+    position: relative;
+    font-size: 60px;
     color: RGB(147, 155, 223);
-    background: transparent;
-    box-shadow: inset 0 0 0 0 RGB(147, 155, 223);
-    border-color: RGB(147, 155, 223);
+    transition: .3s;
 }
+
+.service .service-item:hover i {
+    font-size: 75px;
+}
+
+.service .service-text {
+    position: relative;
+    width: calc(100% - 120px);
+    padding: 0 30px;
+}
+
+.service .service-text h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 1s;
+}
+
+.service .service-text p {
+    margin: 0;
+    font-size: 16px;
+    transition: 1s;
+}
+
+.service .service-item:hover .service-text h3,
+.service .service-item:hover .service-text p {
+    color: #ffffff;
+}
+
+@media (max-width: 575.98px) {
+    .service .service-text h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    
+    .service .service-text p {
+        font-size: 14px;
+    }
+}
+
 
 /*******************************/
 /********* Contact CSS *********/
@@ -844,26 +804,22 @@ Y
     position: relative;
     width: 100%;
     margin: 45px 0;
-    background: #DAD2C0;
+    background: none;
 }
 
 .contact .container-fluid {
-    background: url("https://my.spline.design/studyspace-3faaa51e3d25fdb8b5ab80fe6c763b43/"") left center no-repeat;
+    background: none) left center no-repeat;
     background-size: contain;
 }
 
 .contact .contact-form {
     position: relative;
-    padding: 90px 45px 90px 45px;
-    overflow: hidden;
+    padding: 90px 0 90px 45px;
     background: RGB(147, 155, 223);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; 
 }
 
 .contact .contact-form input {
-    color: #DAD2C0;
+    color: #ffffff;
     padding: 15px 0;
     background: none;
     border-radius: 0;
@@ -872,7 +828,7 @@ Y
 }
 
 .contact .contact-form textarea {
-    color: #DAD2C0;
+    color: #ffffff;
     height: 90px;
     padding: 15px 0;
     background: none;
@@ -882,27 +838,27 @@ Y
 }
 
 .contact .contact-form .form-control::placeholder {
-    color: #DAD2C0;
+    color: #ffffff;
     opacity: 1;
 }
 
 .contact .contact-form .form-control:-ms-input-placeholder,
 .contact .contact-form .form-control::-ms-input-placeholder {
-    color: #DAD2C0;
+    color: #ffffff;
 }
 
 .contact .contact-form .btn {
     margin-top: 35px;
     color: RGB(147, 155, 223);
-    background: #DAD2C0;
-    box-shadow: inset 0 0 0 50px #DAD2C0;
+    background: #ffffff;
+    box-shadow: inset 0 0 0 50px #ffffff;
 }
 
 .contact .contact-form .btn:hover {
-    color: #DAD2C0;
+    color: #ffffff;
     background: transparent;
-    box-shadow: inset 0 0 0 0 #DAD2C0;
-    border-color: #DAD2C0;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
 }
 
 .contact .help-block ul {
@@ -911,7 +867,7 @@ Y
     list-style-type: none;
     font-size: 14px;
     font-style: italic;
-    color: #DAD2C0;
+    color: #ffffff;
 }
 
 @media (max-width: 767.98px) {
@@ -925,17 +881,14 @@ Y
 }
 
 
+
 /*******************************/
 /********* Footer CSS **********/
 /*******************************/
 .footer {
     position: relative;
     margin-top: 45px;
-    overflow: hidden;
-    background: linear-gradient(RGB(147, 155, 223), rgba(236, 239, 35, 0.95)), url(../img/hero-bg.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background:RGB(147, 155, 223);
 }
 
 .footer .container-fluid {
