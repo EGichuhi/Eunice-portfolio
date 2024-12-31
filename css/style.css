@@ -472,14 +472,8 @@ a:focus {
 /*******************************/
 .about {
     position: relative;
-    z-index: 1; /* Layer above the animation */
-    margin: 100px;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    background: rgba(209, 202, 245, 0.247); /* Semi-transparent background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(136, 205, 223, 0.3); /* Subtle shadow */
-    text-align: left; /* Ensure text is aligned to the left */
+    width: 100%;
+    margin: -45px 0 45px 0;
 }
 
 h1, p {
