@@ -1,6 +1,25 @@
 (function ($) {
     "use strict";
     
+    document.addEventListener("DOMContentLoaded", () => {
+        const cursor = document.createElement("div");
+        cursor.classList.add("custom-cursor");
+        document.body.appendChild(cursor);
+      
+        document.addEventListener("mousemove", (e) => {
+          cursor.style.top = `${e.clientY}px`;
+          cursor.style.left = `${e.clientX}px`;
+        });
+      
+        document.addEventListener("mousedown", () => {
+          cursor.style.transform = "scale(0.8)";
+        });
+      
+        document.addEventListener("mouseup", () => {
+          cursor.style.transform = "scale(1)";
+        });
+      });
+      
     // loader
     var loader = function () {
         setTimeout(function () {
