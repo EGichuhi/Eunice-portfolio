@@ -476,16 +476,6 @@ a:focus {
     margin: -45px 0 45px 0;
 }
 
-h1, p {
-    margin: 0 0 20px;
-    text-align: left; /* Align text in h1 and p to the left */
-}
-
-h1 {
-    font-size: 2em;
-}
-
-/* Additional style cleanup */
 .about .col-lg-6 {
     padding: 0;
 }
@@ -494,14 +484,57 @@ h1 {
     margin-bottom: 30px;
 }
 
+.about .about-img {
+    position: relative;
+    height: 80%;
+}
+
+.about .about-img img {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
 .about .about-content {
-    padding: 0;
+    padding: 0 40px;
 }
 
 .about .about-text p {
-    color: white;
     font-size: 16px;
-    text-align: left; /* Ensure paragraph text is aligned to the left */
+    color: #111111;
+}
+
+.about .skills {
+    margin-bottom: 30px;
+}
+
+.about .skill-name {
+    margin-top: 15px;
+}
+
+.about .skill-name p {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.about .skill-name p:last-child {
+    float: right;
+}
+
+.about .progress {
+    height: 10px;
+    border-radius: 10px;
+    background: #dddddd;
+}
+
+.about .progress .progress-bar {
+    width: 0px;
+    background: RGB(147, 155, 223);
+    border-radius: 10px;
+    transition: 2s;
 }
 
 .about .about-text a.btn {
@@ -510,7 +543,7 @@ h1 {
 
 @media (max-width: 991.98px) {
     .about .about-content {
-        padding: 15px 15px 0 15px;
+        padding: 45px 15px 0 15px;
     }
 }
 
